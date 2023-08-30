@@ -41,17 +41,20 @@ export const personals = [
   {
     name: 'Axrorbek Abduraxmanov',
     position: 'Dermotolog',
-    img: 'src/assets/Axrorbek.jpg'
+    img: 'src/assets/Axrorbek.jpg',
+    href: 'doctor-axrorbek'
   },
   {
     name: "Murodjon Mo'minov",
     position: 'Dermotolog',
-    img: 'src/assets/Murodjon.jpg'
+    img: 'src/assets/Murodjon.jpg',
+    href: 'doctor-murodjon'
   },
   {
     name: 'Vacancy',
     position: 'Ish faoliati',
-    img: 'src/assets/doc-vac.jpg'
+    img: 'src/assets/doc-vac.jpg',
+    href: '#'
   }
 ]
 

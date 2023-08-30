@@ -67,9 +67,13 @@ let isActive = ref(true)
       {{ label }}
     </p>
     <p class="font-sfRegular text-xl max-w-[522px] text-left" v-html="title"></p>
-    <!-- eslint-disable vue/no-mutating-props -->
     <div class="flex gap-5">
-      <BaseButton @click="scrollTo()" :type="BUTTON_TYPE_DANGER"> Qabulga yozilish </BaseButton>
+      <a
+        class="bg-main cursor-pointer text-white tracking-wider justify-center flex items-center w-[200px] h-[50px] font-sfMedium text-lg rounded-3xl"
+        @click="scrollTo()"
+      >
+        Qabulga yozilish
+      </a>
       <BaseButton @click="isActive = !isActive" :type="BUTTON_TYPE_NEUTRAL" class="">
         Videoni ko’rish
         <div

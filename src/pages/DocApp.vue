@@ -3,11 +3,9 @@ import { ChatBubbleOvalLeftEllipsisIcon, PhoneIcon, UserIcon } from '@heroicons/
 import axios from 'axios'
 import { ref } from 'vue'
 import { router } from '../router'
-defineProps({
-  doc: {
-    type: String
-  }
-})
+
+const props = defineProps(['doctorName'])
+
 const name = ref('')
 const phone = ref('')
 const subject = ref('')
@@ -17,7 +15,7 @@ const chatId = '657967394'
 const urlApi = `https://api.telegram.org/bot${token}/sendMessage`
 
 const submit = () => {
-  const fullMessage = `<b>✉ Saytdan ariza!</b>\n\n\t<b>✅ Ismi: </b> ${name.value}\n<b>📞 Telefon raqami: </b>${phone.value}\n<b>✍ Izoh: </b>${subject.value}\n <b>Doctor: ${this.doc}</b>`
+  const fullMessage = `<b>✉ Saytdan ariza!</b>\n\n\t<b>✅ Ismi: </b> ${name.value}\n<b>📞 Telefon raqami: </b>${phone.value}\n<b>✍ Izoh: </b>${subject.value}\n <b>Doctor: </b> ${props.doctorName}`
 
   axios
     .post(urlApi, {

@@ -10,7 +10,7 @@
           alt="Axrorbek Abduraxmanov"
         />
         <router-link
-          :to="{ name: 'doc-appointment', params: { doc: 'Axrorbek Abduraxmanov' } }"
+          :to="{ name: 'appointment', params: { doctorName: 'Axrorbek Abduraxmanov' } }"
           class="flex items-center justify-center text-white rounded-[20px] border border-transparent bg-main px-[1.9rem] py-[7.5px] text-lg"
         >
           Qabulga yozilish

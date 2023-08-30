@@ -10,7 +10,7 @@
           alt="Murodjon Mo'minov"
         />
         <router-link
-          to="doc-appointment"
+          :to="{ name: 'appointment', params: { doctorName: 'Murodjon Mo\'minov' } }"
           class="flex items-center justify-center text-white rounded-[20px] border border-transparent bg-main px-[1.9rem] py-[7.5px] text-lg"
         >
           Qabulga yozilish

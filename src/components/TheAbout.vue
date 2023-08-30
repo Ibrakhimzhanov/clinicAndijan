@@ -1,7 +1,7 @@
 <script setup>
 import SectionHeading from '@/components/SectionHeading.vue'
 import { ref } from 'vue'
-import { ABOUT } from '../constants'
+import { ABOUT, BUTTON_TYPE_NEUTRAL } from '../constants'
 import { PlayIcon } from '@heroicons/vue/24/solid'
 import BaseButton from './BaseButton.vue'
 let isActive = ref(true)
@@ -86,24 +86,9 @@ let isActive = ref(true)
               <div class="bg-white p-[6px] flex items-center justify-center rounded-full">
                 <PlayIcon class="h-4 w-4 text-cBlack" />
               </div>
-              <!-- <img src="../assets/Play.svg" alt="Play" /> -->
             </div>
           </BaseButton>
         </div>
-        <!-- <button
-          @click="isActive = !isActive"
-          href="#"
-          class="text-md absolute tracking-wider bottom-20 flex items-center gap-2 text-white rounded-[1.25rem] bg-main px-6 font-sfMedium text-lg"
-        >
-          Videoni ko'rish
-          <div
-            class="relative rounded-full px-1.5 py-1.5 before:absolute before:-left-0.5 before:-top-0.5 before:animate-ping before:rounded-full before:border before:border-white before:px-3 before:py-3"
-          >
-            <div class="border p-1.5 rounded-full">
-              <PlayIcon class="h-4 w-4 text-cBlack" />
-            </div>
-          </div>
-        </button> -->
       </div>
       <a
         href="#"

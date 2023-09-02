@@ -2,7 +2,7 @@
 import { socialMedia } from '@/data'
 
 const classes = [
-  'xl:flex hidden items-center relative bottom-10 justify-between w-full max-w-[1090px] bg-white hover:shadow-3xl rounded-full h-24 py-3 px-12'
+  'xl:flex hidden items-center relative bottom-10 justify-between w-full max-w-[1090px] bg-white shadow-3xl rounded-full h-24 py-3 px-12'
 ]
 </script>
 <template>

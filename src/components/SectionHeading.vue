@@ -7,5 +7,7 @@ defineProps({
 })
 </script>
 <template>
-  <h1 class="mb-12 flex items-center justify-center font-sfBold text-5xl">{{ title }}</h1>
+  <h1 class="mb-12 flex items-center justify-center font-sfBold text-3xl lg:text-5xl">
+    {{ title }}
+  </h1>
 </template>

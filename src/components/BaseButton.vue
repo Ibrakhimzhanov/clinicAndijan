@@ -21,7 +21,7 @@ const typeClasses = {
 <template>
   <router-link
     :to="`/${href}`"
-    :class="`${typeClasses[type]} flex items-center w-[200px] h-[50px] font-sfMedium text-lg rounded-3xl`"
+    :class="`${typeClasses[type]} flex items-center w-[200px] h-[50px] font-sfMedium text-lg rounded-[20px]`"
   >
     <slot></slot>
   </router-link>

@@ -49,7 +49,7 @@ const cards = [
 ]
 </script>
 <template>
-  <div :id="ARTICLES" class="pt-36">
+  <div :id="ARTICLES" class="lg:pt-36 pt-20">
     <SectionHeading title="Maqolalar" />
     <Carousel
       :autoplay="2000"
@@ -87,7 +87,7 @@ const cards = [
     </Carousel>
   </div>
 </template>
-<style>
+<style scope>
 .carousel {
   max-width: 1176px;
   margin: 0 auto;

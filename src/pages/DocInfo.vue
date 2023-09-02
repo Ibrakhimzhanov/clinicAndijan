@@ -1,3 +1,8 @@
+<script setup>
+const props = defineProps(['doctorName', 'img', 'position'])
+
+console.log(props)
+</script>
 <template>
   <div
     class="m-auto flex flex-col shadow-DoctorsShadow rounded-[20px] pt-36 border border-[#F8F4FF] max-w-[1090px] items-center justify-center relative top-[110px] max-h-[600px] p-[50px]"
@@ -6,11 +11,11 @@
       <div class="flex flex-col gap-10">
         <img
           class="border border-[#99E9A5] rounded-[20px] max-w-[192px]"
-          src="@/assets/Axrorbek.jpg"
+          :src="props.img"
           alt="Axrorbek Abduraxmanov"
         />
         <router-link
-          :to="{ name: 'appointment', params: { doctorName: 'Axrorbek Abduraxmanov' } }"
+          :to="{ name: 'appointment', params: { doctorName: props.doctorName } }"
           class="flex items-center justify-center text-white rounded-[20px] border border-transparent bg-main px-[1.9rem] py-[7.5px] text-lg"
         >
           Qabulga yozilish
@@ -18,8 +23,8 @@
       </div>
       <div class="flex flex-col">
         <div class="flex flex-col gap-2 rounded-[20px] border border-[#99E9A5] p-[20px]">
-          <h6 class="m-0 p-0 font-sfBold text-3xl">Axrorbek Abduraxmanov</h6>
-          <span class="w-full text-2xl text-cGray">Dermotolog</span>
+          <h6 class="m-0 p-0 font-sfBold text-3xl">{{ props.doctorName }}</h6>
+          <span class="w-full text-2xl text-cGray">{{ props.position }}</span>
           <p class="max-w-[542px] text-[16px] group-hover:text-black">
             Bu bolalik orzusi edi, yoshligimdan shifokor bo'lishimni aniq bilardim. Barchangizni
             berib, odamlarga yordam bering. Men uchun eng oliy mukofot - bemorning sog'lom go'zal

@@ -9,9 +9,9 @@ defineProps(['currentPage'])
 </script>
 
 <template>
-  <div class="w-full fixed overflow-hidden top-0 z-50 m-auto justify-center flex items-center">
+  <div class="w-full fixed border-none overflow-hidden z-50 mt-0 justify-center flex items-center">
     <nav
-      class="flex w-full container px-5 border border-cGray items-center mt-5 justify-between bg-white rounded-[40px] py-3"
+      class="flex w-full container px-5 items-center xl:mt-5 justify-between bg-white xl:rounded-[40px] py-3"
     >
       <LogoMain />
       <NavMobile />

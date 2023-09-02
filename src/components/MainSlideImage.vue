@@ -1,10 +1,14 @@
 <script setup>
 defineProps({
-  images: {
-    type: String
-  }
+  images: String,
+  label: String,
+  top: String
 })
 </script>
 <template>
-  <img :src="`${images}`" alt="Teri kassalliklarini davolash" class="w-[509px] relative top-2" />
+  <img
+    :src="images"
+    :alt="label"
+    :class="`xl:max-w-[509px]  w-[400px] xl:w-full relative top-${top} lg:left-6`"
+  />
 </template>

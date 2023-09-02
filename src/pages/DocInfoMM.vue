@@ -1,6 +1,6 @@
 <template>
   <div
-    class="m-auto flex flex-col shadow-DoctorsShadow rounded-[20px] border border-[#F8F4FF] max-w-[1090px] mt-32 items-center justify-center h-screen max-h-[600px] p-[50px]"
+    class="m-auto flex flex-col relative top-[110px] shadow-DoctorsShadow rounded-[20px] border border-[#F8F4FF] max-w-[1090px] items-center justify-center h-screen max-h-[600px] p-[50px]"
   >
     <div class="flex w-full items-start justify-between">
       <div class="flex flex-col gap-10">

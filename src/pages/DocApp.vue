@@ -14,33 +14,37 @@ const token = '5692599850:AAHsyL_DKpRVQhWX6renkcwcwhjDL06mPGI'
 const chatId = '657967394'
 const urlApi = `https://api.telegram.org/bot${token}/sendMessage`
 
+let isLoading = ref(false)
 const submit = () => {
   const fullMessage = `<b>✉ Saytdan ariza!</b>\n\n\t<b>✅ Ismi: </b> ${name.value}\n<b>📞 Telefon raqami: </b>${phone.value}\n<b>✍ Izoh: </b>${subject.value}\n <b>Doctor: </b> ${props.doctorName}`
-
+  isLoading.value = true
   axios
     .post(urlApi, {
       chat_id: chatId,
       parse_mode: 'html',
       text: fullMessage
     })
+    .then(() => {
+      router.push({ name: 'Thanks' })
+    })
     .catch((err) => {
       console.warn(err)
-    })
-    .then(router.push({ name: 'Thanks' }))
-    .finally(() => {
-      console.log('Tugadi!')
+      router.push({ name: 'Error' })
     })
 }
+setTimeout(() => {
+  isLoading.value = false
+}, 5000)
 </script>
 
 <template>
   <form method="POST" @submit.prevent="submit">
-    <div class="bg-[#FFEEE4] h-screen flex items-center justify-center">
+    <div class="pt-36 flex items-center justify-center">
       <div
-        class="bg-white text-[#AEB5C4] rounded-lg w-full flex flex-col justify-between max-w-[950px] p-9"
+        class="bg-white shadow-3xl border border-opacity-30 border-main text-[#AEB5C4] rounded-lg w-full flex flex-col justify-between max-w-[450px] p-9"
       >
         <div class="flex flex-col gap-5">
-          <h5 class="text-2xl font-sfBold text-cBlack">Biz Bilan Boshlang</h5>
+          <h5 class="text-2xl font-sfBold text-cBlack">Biz Bilan Bog'laning</h5>
           <p class="text-lg font-sfMedium">Teri kasalliklarini davolash</p>
         </div>
         <div class="flex w-full h-full py-10">
@@ -81,10 +85,8 @@ const submit = () => {
                 class="flex items-center justify-start gap-2 rounded-[10px] p-[15px] bg-[#F8F9FD]"
               >
                 <ChatBubbleOvalLeftEllipsisIcon class="h-5 w-5" />
-                <textarea
+                <input
                   class="bg-transparent w-full flex flex-wrap text-cBlack outline-none placeholder:font-sfRegular placeholder:text-lg"
-                  cols="45"
-                  row="4"
                   placeholder="Iltimos izohingizni qoldiring..."
                   v-model="subject"
                   name="text"
@@ -94,13 +96,20 @@ const submit = () => {
             </div>
           </div>
         </div>
-        <div class="m-auto">
+        <div>
           <input
             type="submit"
-            class="text-lg cursor-pointer flex justify-center rounded-[10px] bg-main font-sfMedium text-white py-[11px] w-[430px]"
+            value="Yuborish"
+            class="text-lg w-[200px] h-[50px] cursor-pointer flex justify-center rounded-[20px] bg-main font-sfMedium text-white"
           />
         </div>
       </div>
     </div>
   </form>
+  <div
+    id="loader"
+    :class="`${
+      isLoading ? 'block' : 'hidden'
+    } fixed top-0 bottom-0 overflow-hidden  left-0 right-0 w-full bg-white  bg-[url(/loading.gif)] bg-no-repeat  bg-center z-[1000]`"
+  ></div>
 </template>

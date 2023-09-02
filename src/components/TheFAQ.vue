@@ -1,63 +1,14 @@
 <script setup>
 import SectionHeading from '@/components/SectionHeading.vue'
-import { FAQ } from '../constants'
-import { reactive } from 'vue'
+import { FAQ } from '@/constants'
+import { faqQuestions as questions } from '@/data'
 import { Collapse } from 'vue-collapsed'
 import { MinusIcon, PlusIcon } from '@heroicons/vue/24/solid'
-
-const questions = reactive([
-  {
-    title: 'Teridagi oq dog’ kasalligini qanday davolash mumkin?',
-    answer:
-      'Teridagi oq dog’larga Vud lampa uskunasi yordamida va boshqa laborator tekshiruv natijalariga asoslanib aniq tashxis qo’yiladi va davolanadi. Bizning klinikamizda Eksimer lazer yordamida teridagi oq dog’larga Yevropa standarti darajasida davolash o’tkaziladi. Tashxislash uchun ham barcha uskunalar bor',
-    isExpanded: false // Initial value
-  },
-  {
-    title: 'Psoriaz kasalligi qanday davolanadi? ',
-    answer:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fus pharetra non loRm nec moncus. Etiam pomkordui n metus auctor vestibulum',
-    isExpanded: false
-  },
-  {
-    title: 'Soch ekish og’riqlimi? ',
-    answer:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fus pharetra non loRm nec moncus. Etiam pomkordui n metus auctor vestibulum',
-    isExpanded: false
-  },
-  {
-    title: 'So’gal yoki qadoqlarni davolash imkoni bormi? ',
-    answer:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fus pharetra non loRm nec moncus. Etiam pomkordui n metus auctor vestibulum',
-    isExpanded: false
-  },
-  {
-    title: 'Xusnbuzar kasalligini to’liq davosi bormi? ',
-    answer:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fus pharetra non loRm nec moncus. Etiam pomkordui n metus auctor vestibulum',
-    isExpanded: false
-  },
-  {
-    title: ' Teridagi oq dog’larga gelmint (medda)ning aloqasi bormi?',
-    answer:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fus pharetra non loRm nec moncus. Etiam pomkordui n metus auctor vestibulum',
-    isExpanded: false
-  },
-  {
-    title: 'SPF ya’ni, terini quyoshdan ximoyalovchi vositalar rostdan ham foyda beradimi? ',
-    answer:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fus pharetra non loRm nec moncus. Etiam pomkordui n metus auctor vestibulum',
-    isExpanded: false
-  }
-])
-function handleAccordion(selectedIndex) {
-  questions.forEach((_, index) => {
-    questions[index].isExpanded = index === selectedIndex ? !questions[index].isExpanded : false
-  })
-}
+import { handleAccordion } from '@/function'
 </script>
 
 <template>
-  <div class="mt-28">
+  <div class="lg:pt-36 pt-20">
     <SectionHeading :title="FAQ" class="text-center" />
 
     <div class="flex m-auto px-5 max-w-[870px] w-full flex-col gap-1">

@@ -1,7 +1,7 @@
 <script setup>
 import SectionHeading from '@/components/SectionHeading.vue'
 import { ref } from 'vue'
-import { ABOUT, BUTTON_TYPE_NEUTRAL } from '../constants'
+import { ABOUT, BUTTON_TYPE_DANGER, BUTTON_TYPE_NEUTRAL } from '../constants'
 import { PlayIcon } from '@heroicons/vue/24/solid'
 import BaseButton from './BaseButton.vue'
 let isActive = ref(true)
@@ -49,7 +49,7 @@ let isActive = ref(true)
       </div>
     </div>
   </div>
-  <div :id="ABOUT" class="pt-36">
+  <div :id="ABOUT" class="lg:pt-36 pt-20">
     <SectionHeading :title="ABOUT" />
     <div
       class="m-auto flex lg:flex-row flex-col xl:gap-0 xl:p-0 p-5 gap-10 max-w-[1060px] items-center justify-between"
@@ -67,18 +67,16 @@ let isActive = ref(true)
           jihozlar bilan tibbiy xizmat ko‘rsatiladi. <br />
           Qulay joylashuv va tibbiy xizmat sifati bilan bemorlarga qulaylik yaratib kelmoqdamiz.
         </p>
-        <a
-          href="#"
-          class="lg:flex hidden text-white items-center justify-center rounded-[1.25rem] border bg-main px-[1.9rem] py-[0.665rem] font-sfMedium text-lg tracking-wider"
-          >Ro‘yxatdan o‘tish
-        </a>
       </div>
       <div class="relative flex items-end justify-center">
         <img class="rounded-[40px]" src="../assets/about.jpg" alt="Biz haqimizda" />
         <div
           class="absolute bottom-20 flex items-center gap-2 text-white rounded-[1.25rem] bg-main font-sfMedium text-lg"
         >
-          <BaseButton @click="isActive = !isActive" :type="BUTTON_TYPE_NEUTRAL">
+          <div
+            @click="isActive = !isActive"
+            class="flex items-center w-[200px] h-[50px] cursor-pointer font-sfMedium text-lg rounded-[20px] justify-between border border-main px-5"
+          >
             Videoni ko’rish
             <div
               class="relative rounded-full border border-white p-[3px] before:absolute before:animate-ping before:rounded-full before:border before:border-white before:p-[13px] before:top-[3px] before:left-[3px]"
@@ -87,14 +85,9 @@ let isActive = ref(true)
                 <PlayIcon class="h-4 w-4 text-cBlack" />
               </div>
             </div>
-          </BaseButton>
+          </div>
         </div>
       </div>
-      <a
-        href="#"
-        class="flex lg:hidden text-white items-center justify-center rounded-[1.25rem] border bg-main px-[1.9rem] py-[0.665rem] font-sfMedium text-lg tracking-wider"
-        >Ro‘yxatdan o‘tish
-      </a>
     </div>
   </div>
 </template>

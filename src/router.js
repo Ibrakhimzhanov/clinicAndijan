@@ -27,6 +27,7 @@ export const router = createRouter({
       component: () => import('@/pages/DocInfoMM.vue')
     },
     {
+      name: 'doc-appointment',
       path: '/doc-appointment',
       component: () => import('@/pages/DocInfoAA.vue')
     },
@@ -34,6 +35,11 @@ export const router = createRouter({
       name: 'Thanks',
       path: '/thanks',
       component: () => import('@/pages/Thanks.vue')
+    },
+    {
+      name: 'Error',
+      path: '/error',
+      component: () => import('@/pages/Error.vue')
     },
     {
       path: '/Shifokorlar',
@@ -56,7 +62,7 @@ export const router = createRouter({
       component: () => import('@/components/TheContact.vue')
     }
   ],
-  scrollBehavior(to, from, savedPosition) {
+  scrollBehavior() {
     return { top: 0 }
   },
   history: createWebHistory()

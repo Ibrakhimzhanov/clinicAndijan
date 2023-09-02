@@ -3,6 +3,7 @@ import BaseButton from './BaseButton.vue'
 import { BUTTON_TYPE_NEUTRAL } from '../constants'
 import { ref } from 'vue'
 import { PlayIcon } from '@heroicons/vue/24/solid'
+import MainSlideVideo from './MainSlideVideo.vue'
 defineProps({
   label: {
     type: String
@@ -18,26 +19,17 @@ const scrollTo = () => {
     behavior: 'smooth'
   })
 }
-let showModal = ref(true)
+const videoId = 'XqFJYO-i9aA?si=JBCqD83k1eNE6oDY'
+const isModalOpen = ref(false)
 
-const closeModal = () => {
-  this.$emit('close')
+const showVideoModal = () => {
+  isModalOpen.value = true
+}
+const closeVideoModal = () => {
+  isModalOpen.value = false
 }
 </script>
 <template>
-  <div v-if="true" class="modal">
-    <div class="modal-content">
-      <span class="close" @click="closeModal">&times;</span>
-      <iframe
-        width="560"
-        height="315"
-        src="https://www.youtube.com/embed/XqFJYO-i9aA?start=5"
-        title="YouTube video player"
-        frameborder="0"
-        allowfullscreen
-      ></iframe>
-    </div>
-  </div>
   <div class="flex flex-col items-center xl:items-start max-w-[624px] lg:mt-0 mt-14 w-full gap-5">
     <p
       class="lg:text-[45px] text-[30px] font-sfBold leading-tight xl:text-left text-center w-full flex items-end justify-end"
@@ -55,7 +47,7 @@ const closeModal = () => {
       >
         Qabulga yozilish
       </a>
-      <BaseButton @click="showModal = true" :type="BUTTON_TYPE_NEUTRAL" class="">
+      <BaseButton @click="showVideoModal" :type="BUTTON_TYPE_NEUTRAL" class="">
         Videoni ko’rish
         <div
           class="relative rounded-full border border-main p-[3px] before:absolute before:animate-ping before:rounded-full before:border before:border-main before:p-[12px] before:top-[2px] before:left-[3px]"
@@ -65,38 +57,7 @@ const closeModal = () => {
           </div>
         </div>
       </BaseButton>
+      <MainSlideVideo :video-id="videoId" :show-modal="isModalOpen" @close="closeVideoModal" />
     </div>
   </div>
 </template>
-<style scoped>
-/* Стили модального окна */
-.modal {
-  display: none;
-  position: fixed;
-  z-index: 1;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  overflow: auto;
-  background-color: rgba(0, 0, 0, 0.7);
-}
-
-.modal-content {
-  position: relative;
-  margin: auto;
-  width: 80%;
-  max-width: 800px;
-  background-color: #fefefe;
-  padding: 20px;
-}
-
-.close {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  font-size: 24px;
-  font-weight: bold;
-  cursor: pointer;
-}
-</style>

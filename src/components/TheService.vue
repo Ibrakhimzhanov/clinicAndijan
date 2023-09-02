@@ -5,10 +5,10 @@ import { ArrowRightIcon } from '@heroicons/vue/24/solid'
 import { services } from '@/data'
 </script>
 <template>
-  <div class="pt-36" :id="SERVICE">
+  <div class="lg:pt-36 pt-20 px-2" :id="SERVICE">
     <SectionHeading :title="SERVICE" />
     <div
-      class="max-w-[1060px] w-full m-auto flex flex-wrap justify-center xl:justify-between gap-5 mb-28"
+      class="max-w-[1060px] w-full m-auto flex flex-wrap justify-center xl:justify-between gap-5 lg:mb-28"
     >
       <div
         v-for="{ title, subtitle, img } in services"

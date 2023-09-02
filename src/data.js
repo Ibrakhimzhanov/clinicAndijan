@@ -5,7 +5,7 @@ export const slides = [
     label: 'Teri kasalliklarini davolash, oldini olish va reabilitatsiyasi markazi.',
     title:
       'Eksimer lazer, Vud lampa, kriodestruktor, elektrokoagulyator kabi zamonvaiy tibbiy uskunalar bilan jixozlangan',
-    img: '../assets/slide-1.svg',
+    img: '../src/assets/slide-1.svg',
     top: 4
   },
   {
@@ -13,7 +13,7 @@ export const slides = [
     label: 'Sochdagi kasalliklarni davolash, oldini olish va reabilitatsiyasi markazi.',
     title:
       'Eksimer lazer, Vud lampa, kriodestruktor, elektrokoagulyator kabi zamonvaiy tibbiy uskunalar bilan jixozlangan',
-    img: '../assets/slide-2.svg',
+    img: '../src/assets/slide-2.svg',
     top: 4
   },
   {
@@ -21,7 +21,7 @@ export const slides = [
     label: 'Teri kasalliklarini davolash, oldini olish va reabilitatsiyasi markazi.',
     title:
       'Eksimer lazer, Vud lampa, kriodestruktor, elektrokoagulyator kabi zamonvaiy tibbiy uskunalar bilan jixozlangan',
-    img: '../assets/slide-3.svg',
+    img: '../src/assets/slide-3.svg',
     top: '10'
   }
 ]
@@ -29,17 +29,17 @@ export const slides = [
 export const socialMedia = [
   {
     name: 'Instagram',
-    img: '../assets/ins.svg',
+    img: '../src/assets/ins.svg',
     url: 'https://www.instagram.com/anderma.uz/'
   },
   {
     name: 'Telegram',
-    img: '../assets/tel.svg',
+    img: '../src/assets/tel.svg',
     url: 'https://t.me/anderma_chat'
   },
   {
     name: 'Facebook',
-    img: '../assets/fac.svg',
+    img: '../src/assets/fac.svg',
     url: 'https://www.facebook.com/anderma.uz/'
   }
 ]
@@ -50,7 +50,7 @@ export const personals = [
     position: 'Dermotolog',
     description:
       " Bu bolalik orzusi edi, yoshligimdan shifokor bo'lishimni aniq bilardim. Barchangizni berib, odamlarga yordam bering. Men uchun eng oliy mukofot - bemorning sog'lom go'zal tabassumdan quvonchini ko'rishdir.",
-    img: '../assets/Axrorbek.jpg',
+    img: '../src/assets/Axrorbek.jpg',
     href: 'doctor-axrorbek'
   },
   {
@@ -58,13 +58,13 @@ export const personals = [
     position: 'Dermotolog',
     description:
       "Bu bolalik orzusi edi, yoshligimdan shifokor bo'lishimni aniq bilardim. Barchangizni berib, odamlarga yordam bering. Men uchun eng oliy mukofot - bemorning sog'lom go'zal tabassumdan quvonchini ko'rishdir.",
-    img: '../assets/Murodjon.jpg',
+    img: '../src/assets/Murodjon.jpg',
     href: 'doctor-murodjon'
   },
   {
     name: 'Vacancy',
     position: 'Ish faoliati',
-    img: '../assets/doc-vac.jpg',
+    img: '../src/assets/doc-vac.jpg',
     href: '#'
   }
 ]
@@ -74,35 +74,35 @@ export const services = [
     title: 'VITILIGO (Oq dog’)',
     subtitle:
       "VITILIGO (OQ DOG') kasalligini davolash Vitiligo (oq dog’) kasalligiga Vud lampa yordamida tashxis qo’yish va Eksimer lazer yordamida davolash",
-    img: '../assets/vitiligo.png'
+    img: '../src/assets/vitiligo.png'
   },
   {
     title: 'PSORIAZ kasalligi',
     subtitle:
       'Psoriazda Yevropa standartlarida davolash (3-5 yilgacha kasallikni nofoal davrda ushlab turish)',
-    img: '../assets/psoriaz.png'
+    img: '../src/assets/psoriaz.png'
   },
   {
     title: 'XUSNBUZAR kasalligi',
     subtitle: 'Xusnbuzar kasalligini aniq sabablarga qaratilgan zamonaviy davolash usuli',
-    img: '../assets/xusnbuzar.png'
+    img: '../src/assets/xusnbuzar.png'
   },
   {
     title: 'SOCH to’kilishi',
     subtitle:
       'Soch to’kilishining aniq sabablarini aniqlash Soch ekish (ko’chirib o’tkazish FUE) amaliyoti',
-    img: '../assets/soch.png'
+    img: '../src/assets/soch.png'
   },
   {
     title: 'TIRNOQDAGI o’zgarishlar',
     subtitle:
       'PODOLOGIYA – tirnoq qalinlashishi, teri ichiga o’sishi tovon terisidagi muammolarga zamonaviy yechim',
-    img: '../assets/tirnoqdagi.png'
+    img: '../src/assets/tirnoqdagi.png'
   },
   {
     title: 'BOLALARDAGI teri kasalliklari',
     subtitle: 'Bolalar terisidagi o’zgarishlar va kasalliklarni tashxislash va davolash.',
-    img: '../assets/teri.png'
+    img: '../src/assets/teri.png'
   }
 ]
 export const feedbackUsers = [
@@ -110,19 +110,19 @@ export const feedbackUsers = [
     id: 0,
     name: 'Iqbol Xoliqov',
     position: 'Shifokor Nevropotolog',
-    img: '../assets/iqbol.jpg'
+    img: '../src/assets/iqbol.jpg'
   },
   {
     id: 1,
     name: 'Lola Baxtiyorovna',
     position: 'Dermotolog',
-    img: '../assets/lola.jpg'
+    img: '../src/assets/lola.jpg'
   },
   {
     id: 2,
     name: 'Abrorbek Ibrokhimov',
     position: 'Shifokor Nevropotolog',
-    img: '../assets/abror.jpg'
+    img: '../src/assets/abror.jpg'
   }
 ]
 export const feedbackDescriptions = [

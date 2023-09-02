@@ -97,12 +97,12 @@ export const services = [
     title: 'TIRNOQDAGI o’zgarishlar',
     subtitle:
       'PODOLOGIYA – tirnoq qalinlashishi, teri ichiga o’sishi tovon terisidagi muammolarga zamonaviy yechim',
-    img: '/../src/assets/tirnoqdagi.png'
+    img: '/assets/tirnoqdagi.png'
   },
   {
     title: 'BOLALARDAGI teri kasalliklari',
     subtitle: 'Bolalar terisidagi o’zgarishlar va kasalliklarni tashxislash va davolash.',
-    img: '/../src/assets/teri.png'
+    img: '/assets/teri.png'
   }
 ]
 export const feedbackUsers = [
@@ -110,19 +110,19 @@ export const feedbackUsers = [
     id: 0,
     name: 'Iqbol Xoliqov',
     position: 'Shifokor Nevropotolog',
-    img: './assets/iqbol.jpg'
+    img: '/assets/iqbol.jpg'
   },
   {
     id: 1,
     name: 'Lola Baxtiyorovna',
     position: 'Dermotolog',
-    img: './assets/lola.jpg'
+    img: '/assets/lola.jpg'
   },
   {
     id: 2,
     name: 'Abrorbek Ibrokhimov',
     position: 'Shifokor Nevropotolog',
-    img: '/../src/assets/abror.jpg'
+    img: './../src/assets/abror.jpg'
   }
 ]
 export const feedbackDescriptions = [

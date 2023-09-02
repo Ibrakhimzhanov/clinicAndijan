@@ -110,13 +110,13 @@ export const feedbackUsers = [
     id: 0,
     name: 'Iqbol Xoliqov',
     position: 'Shifokor Nevropotolog',
-    img: '/../src/assets/iqbol.jpg'
+    img: './assets/iqbol.jpg'
   },
   {
     id: 1,
     name: 'Lola Baxtiyorovna',
     position: 'Dermotolog',
-    img: '/../src/assets/lola.jpg'
+    img: './assets/lola.jpg'
   },
   {
     id: 2,

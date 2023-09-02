@@ -80,18 +80,18 @@ export const services = [
     title: 'PSORIAZ kasalligi',
     subtitle:
       'Psoriazda Yevropa standartlarida davolash (3-5 yilgacha kasallikni nofoal davrda ushlab turish)',
-    img: '/../src/assets/psoriaz.png'
+    img: '/assets/psoriaz.png'
   },
   {
     title: 'XUSNBUZAR kasalligi',
     subtitle: 'Xusnbuzar kasalligini aniq sabablarga qaratilgan zamonaviy davolash usuli',
-    img: '/../src/assets/xusnbuzar.png'
+    img: 'assets/xusnbuzar.png'
   },
   {
     title: 'SOCH to’kilishi',
     subtitle:
       'Soch to’kilishining aniq sabablarini aniqlash Soch ekish (ko’chirib o’tkazish FUE) amaliyoti',
-    img: '/../src/assets/soch.png'
+    img: 'assets/soch.png'
   },
   {
     title: 'TIRNOQDAGI o’zgarishlar',
@@ -122,7 +122,7 @@ export const feedbackUsers = [
     id: 2,
     name: 'Abrorbek Ibrokhimov',
     position: 'Shifokor Nevropotolog',
-    img: './../src/assets/abror.jpg'
+    img: '/src/assets/abror.jpg'
   }
 ]
 export const feedbackDescriptions = [

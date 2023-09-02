@@ -3,7 +3,7 @@ import LogoMain from './LogoMain.vue'
 </script>
 <template>
   <div
-    class="xl:mt-32 mt-10 flex items-center justify-between rounded-b-none rounded-t-[50px] rounded-tr-[50px] bg-[#E5F0FF] px-5 lg:px-20 xl:px-[172px] py-10 xl:py-16"
+    class="xl:mt-32 sticky mt-10 flex items-center justify-between rounded-b-none rounded-t-[50px] rounded-tr-[50px] bg-[#E5F0FF] px-5 lg:px-20 xl:px-[172px] py-10 xl:py-16"
   >
     <div class="flex flex-col items-start gap-5 xl:gap-10">
       <a href="index.html">

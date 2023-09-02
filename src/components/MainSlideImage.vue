@@ -1,9 +1,5 @@
 <script setup>
-defineProps({
-  images: String,
-  label: String,
-  top: String
-})
+defineProps(['images', 'label', 'top'])
 </script>
 <template>
   <img

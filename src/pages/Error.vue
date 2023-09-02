@@ -5,15 +5,17 @@ import BaseButton from '../components/BaseButton.vue'
 <template>
   <div class="flex h-[500px] items-center flex-col justify-center gap-5">
     <header class="pt-[150px]" id="header">
-      <h1 class="text-[4rem]" data-lead-id="site-header-title">ARIZA YUBORILDI!</h1>
+      <h1 class="text-[4rem]" data-lead-id="site-header-title">Xatolik yuz berdi!</h1>
     </header>
 
     <div class="flex flex-col gap-5 items-center max-w-[820px] w-full">
       <p class="text-xl text-center" data-lead-id="main-content-body">
-        Arizani to'ldirganingiz uchun katta rahmat. Bu siz uchun bo'lgani kabi biz uchun ham katta
-        ahamiyatga ega! Bugun bizga bir daqiqa vaqt ajratganingizni juda qadrlaymiz.
+        Ariza yuborishda xatolik yuz berdi. Iltimos qaytadan urinib ko'ring!
       </p>
     </div>
-    <BaseButton :type="BUTTON_TYPE_DANGER" href="Asosiy"> Asosiy sahifa </BaseButton>
+    <div class="flex gap-10 mt-5">
+      <BaseButton :type="BUTTON_TYPE_DANGER" href="Asosiy"> Asosiy sahifa </BaseButton>
+      <BaseButton :type="BUTTON_TYPE_DANGER" href="Shifokorlar"> Shifokor topish </BaseButton>
+    </div>
   </div>
 </template>

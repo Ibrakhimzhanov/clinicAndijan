@@ -12,7 +12,7 @@ const subject = ref('')
 
 const token = '5692599850:AAHsyL_DKpRVQhWX6renkcwcwhjDL06mPGI'
 const chatId = '657967394'
-const urlApi = `https://api.telegram.org/bot${token}/sendMessage`
+const urlApi = `https://api.telegram.org/bot${token}/sseendMessage`
 
 let isLoading = ref(false)
 const submit = () => {

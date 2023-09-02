@@ -20,10 +20,6 @@ import { ref } from 'vue'
     <ul class="flex justify-between gap-12 font-sfMedium text-lg">
       <!-- eslint-disable vue/no-mutating-props -->
       <NavListItem :to="`/${link}`" v-for="link in navItems" :key="link">
-        <!-- :class="{
-          'pointer-events-none border border-transparent border-b-cBlack': link === currentPage
-        }" -->
-        <!-- @click="currentPage = link" -->
         {{ link }}
       </NavListItem>
     </ul>

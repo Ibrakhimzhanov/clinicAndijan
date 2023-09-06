@@ -49,10 +49,14 @@ const slides = [
   >
     <SplideSlide
       class="w-full mt-7 h-full flex lg:flex-row flex-col items-center justify-center xl:gap-20 xl:px-6 xl:left-20"
-      v-for="{ id, img, label, title, top } in slides"
-      :key="id"
     >
-      <MainSlideImage :images="img" :top="top" :label="label" />
+      <MainSlideImage
+        v-for="{ id, img, label, title, top } in slides"
+        :key="id"
+        :images="img"
+        :top="top"
+        :label="label"
+      />
       <MainSlideText :label="label" :title="title" />
     </SplideSlide>
   </Splide>

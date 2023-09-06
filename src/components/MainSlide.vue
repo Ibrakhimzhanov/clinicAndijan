@@ -20,7 +20,7 @@ const slides = [
     label: 'Teri kasalliklarini davolash, oldini olish va reabilitatsiyasi markazi.',
     title:
       'Eksimer lazer, Vud lampa, kriodestruktor, elektrokoagulyator kabi zamonvaiy tibbiy uskunalar bilan jixozlangan',
-    img: 'src/assets/slide-1.svg',
+    img: '/assets/slide-1.svg',
     top: 5
   },
   {
@@ -28,7 +28,7 @@ const slides = [
     label: 'Sochdagi kasalliklarni davolash, oldini olish va reabilitatsiyasi markazi.',
     title:
       'Eksimer lazer, Vud lampa, kriodestruktor, elektrokoagulyator kabi zamonvaiy tibbiy uskunalar bilan jixozlangan',
-    img: 'src/assets/slide-2.svg',
+    img: '/assets/slide-2.svg',
     top: 4
   },
   {
@@ -36,7 +36,7 @@ const slides = [
     label: 'Teri kasalliklarini davolash, oldini olish va reabilitatsiyasi markazi.',
     title:
       'Eksimer lazer, Vud lampa, kriodestruktor, elektrokoagulyator kabi zamonvaiy tibbiy uskunalar bilan jixozlangan',
-    img: 'src/assets/slide-3.svg',
+    img: '/assets/slide-3.svg',
     top: 10
   }
 ]

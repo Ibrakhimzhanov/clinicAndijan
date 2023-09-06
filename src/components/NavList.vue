@@ -18,7 +18,6 @@ import { ref } from 'vue'
 <template>
   <nav class="xl:flex hidden justify-center items-center">
     <ul class="flex justify-between gap-12 font-sfMedium text-lg">
-      <!-- eslint-disable vue/no-mutating-props -->
       <NavListItem :to="`/${link}`" v-for="link in navItems" :key="link">
         {{ link }}
       </NavListItem>

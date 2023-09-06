@@ -1,19 +1,67 @@
 import { reactive } from 'vue'
 
+import slide1 from './assets/slide-1.svg'
+import slide2 from './assets/slide-2.svg'
+import slide3 from './assets/slide-3.svg'
+import ins from './assets/ins.svg'
+import tg from './assets/tel.svg'
+import fac from './assets/fac.svg'
+import ax from './assets/Axrorbek.jpg'
+import mr from './assets/Murodjon.jpg'
+import vac from './assets/doc-vac.jpg'
+
+import vt from './assets/vitiligo.png'
+import ps from './assets/psoriaz.png'
+import xs from './assets/xusnbuzar.png'
+import soch from './assets/soch.png'
+import tir from './assets/tirnoqdagi.png'
+import tr from './assets/teri.png'
+
+import iq from './assets/iqbol.jpg'
+import ll from './assets/lola.jpg'
+import ab from './assets/abror.jpg'
+
+export const slides = [
+  {
+    id: 0,
+    label: 'Teri kasalliklarini davolash, oldini olish va reabilitatsiyasi markazi.',
+    title:
+      'Eksimer lazer, Vud lampa, kriodestruktor, elektrokoagulyator kabi zamonvaiy tibbiy uskunalar bilan jixozlangan',
+    img: slide1,
+    top: 4
+  },
+  {
+    id: 1,
+    label: 'Sochdagi kasalliklarni davolash, oldini olish va reabilitatsiyasi markazi.',
+    title:
+      'Eksimer lazer, Vud lampa, kriodestruktor, elektrokoagulyator kabi zamonvaiy tibbiy uskunalar bilan jixozlangan',
+    img: slide2,
+    top: 4
+  },
+  {
+    id: 2,
+    label: 'Teri kasalliklarini davolash, oldini olish va reabilitatsiyasi markazi.',
+    title:
+      'Eksimer lazer, Vud lampa, kriodestruktor, elektrokoagulyator kabi zamonvaiy tibbiy uskunalar bilan jixozlangan',
+    img: slide3,
+    top: 10
+  }
+]
+
 export const socialMedia = [
   {
     name: 'Instagram',
-    img: import('@/assets/fac.svg').then((module) => module.default),
+    img: ins,
     url: 'https://www.instagram.com/anderma.uz/'
   },
   {
     name: 'Telegram',
-    img: import('@/assets/fac.svg').then((module) => module.default),
+    img: tg,
     url: 'https://t.me/anderma_chat'
   },
   {
     name: 'Facebook',
-    img: import('@/assets/fac.svg').then((module) => module.default),
+    img: fac,
     url: 'https://www.facebook.com/anderma.uz/'
   }
 ]
@@ -23,8 +71,8 @@ export const personals = [
     name: 'Axrorbek Abduraxmanov',
     position: 'Dermotolog',
     description:
-      " Bu bolalik orzusi edi, yoshligimdan shifokor bo'lishimni aniq bilardim. Barchangizni berib, odamlarga yordam bering. Men uchun eng oliy mukofot - bemorning sog'lom go'zal tabassumdan quvonchini ko'rishdir.",
-    img: 'path/Axrorbek.jpg',
+      "Bu bolalik orzusi edi, yoshligimdan shifokor bo'lishimni aniq bilardim. Barchangizni berib, odamlarga yordam bering. Men uchun eng oliy mukofot - bemorning sog'lom go'zal tabassumdan quvonchini ko'rishdir.",
+    img: ax,
     href: 'doctor-axrorbek'
   },
   {
@@ -32,13 +80,13 @@ export const personals = [
     position: 'Dermotolog',
     description:
       "Bu bolalik orzusi edi, yoshligimdan shifokor bo'lishimni aniq bilardim. Barchangizni berib, odamlarga yordam bering. Men uchun eng oliy mukofot - bemorning sog'lom go'zal tabassumdan quvonchini ko'rishdir.",
-    img: 'path/Murodjon.jpg',
+    img: mr,
     href: 'doctor-murodjon'
   },
   {
     name: 'Vacancy',
     position: 'Ish faoliati',
-    img: 'path/doc-vac.jpg',
+    img: vac,
     href: '#'
   }
 ]
@@ -48,55 +96,56 @@ export const services = [
     title: 'VITILIGO (Oq dog’)',
     subtitle:
       "VITILIGO (OQ DOG') kasalligini davolash Vitiligo (oq dog’) kasalligiga Vud lampa yordamida tashxis qo’yish va Eksimer lazer yordamida davolash",
-    img: '/../src/assets/vitiligo.png'
+    img: vt
   },
   {
     title: 'PSORIAZ kasalligi',
     subtitle:
       'Psoriazda Yevropa standartlarida davolash (3-5 yilgacha kasallikni nofoal davrda ushlab turish)',
-    img: '/assets/psoriaz.png'
+    img: ps
   },
   {
     title: 'XUSNBUZAR kasalligi',
     subtitle: 'Xusnbuzar kasalligini aniq sabablarga qaratilgan zamonaviy davolash usuli',
-    img: 'assets/xusnbuzar.png'
+    img: xs
   },
   {
     title: 'SOCH to’kilishi',
     subtitle:
       'Soch to’kilishining aniq sabablarini aniqlash Soch ekish (ko’chirib o’tkazish FUE) amaliyoti',
-    img: 'assets/soch.png'
+    img: soch
   },
   {
     title: 'TIRNOQDAGI o’zgarishlar',
     subtitle:
       'PODOLOGIYA – tirnoq qalinlashishi, teri ichiga o’sishi tovon terisidagi muammolarga zamonaviy yechim',
-    img: '/assets/tirnoqdagi.png'
+    img: tir
   },
   {
     title: 'BOLALARDAGI teri kasalliklari',
     subtitle: 'Bolalar terisidagi o’zgarishlar va kasalliklarni tashxislash va davolash.',
-    img: '/assets/teri.png'
+    img: tr
   }
 ]
+
 export const feedbackUsers = [
   {
     id: 0,
     name: 'Iqbol Xoliqov',
     position: 'Shifokor Nevropotolog',
-    img: '/assets/iqbol.jpg'
+    img: iq
   },
   {
     id: 1,
     name: 'Lola Baxtiyorovna',
     position: 'Dermotolog',
-    img: '@/assets/lola.jpg'
+    img: ll
   },
   {
     id: 2,
     name: 'Abrorbek Ibrokhimov',
     position: 'Shifokor Nevropotolog',
-    img: '/src/assets/abror.jpg'
+    img: ab
   }
 ]
 export const feedbackDescriptions = [

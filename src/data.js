@@ -1,45 +1,19 @@
 import { reactive } from 'vue'
-export const slides = [
-  {
-    id: 0,
-    label: 'Teri kasalliklarini davolash, oldini olish va reabilitatsiyasi markazi.',
-    title:
-      'Eksimer lazer, Vud lampa, kriodestruktor, elektrokoagulyator kabi zamonvaiy tibbiy uskunalar bilan jixozlangan',
-    img: '/../src/assets/slide-1.svg',
-    top: 4
-  },
-  {
-    id: 1,
-    label: 'Sochdagi kasalliklarni davolash, oldini olish va reabilitatsiyasi markazi.',
-    title:
-      'Eksimer lazer, Vud lampa, kriodestruktor, elektrokoagulyator kabi zamonvaiy tibbiy uskunalar bilan jixozlangan',
-    img: '/../src/assets/slide-2.svg',
-    top: 4
-  },
-  {
-    id: 2,
-    label: 'Teri kasalliklarini davolash, oldini olish va reabilitatsiyasi markazi.',
-    title:
-      'Eksimer lazer, Vud lampa, kriodestruktor, elektrokoagulyator kabi zamonvaiy tibbiy uskunalar bilan jixozlangan',
-    img: '/../src/assets/slide-3.svg',
-    top: '10'
-  }
-]
 
 export const socialMedia = [
   {
     name: 'Instagram',
-    img: '/../src/assets/ins.svg',
+    img: import('@/assets/fac.svg').then((module) => module.default),
     url: 'https://www.instagram.com/anderma.uz/'
   },
   {
     name: 'Telegram',
-    img: '/../src/assets/tel.svg',
+    img: import('@/assets/fac.svg').then((module) => module.default),
     url: 'https://t.me/anderma_chat'
   },
   {
     name: 'Facebook',
-    img: '/../src/assets/fac.svg',
+    img: import('@/assets/fac.svg').then((module) => module.default),
     url: 'https://www.facebook.com/anderma.uz/'
   }
 ]
@@ -50,7 +24,7 @@ export const personals = [
     position: 'Dermotolog',
     description:
       " Bu bolalik orzusi edi, yoshligimdan shifokor bo'lishimni aniq bilardim. Barchangizni berib, odamlarga yordam bering. Men uchun eng oliy mukofot - bemorning sog'lom go'zal tabassumdan quvonchini ko'rishdir.",
-    img: '/../src/assets/Axrorbek.jpg',
+    img: 'path/Axrorbek.jpg',
     href: 'doctor-axrorbek'
   },
   {
@@ -58,13 +32,13 @@ export const personals = [
     position: 'Dermotolog',
     description:
       "Bu bolalik orzusi edi, yoshligimdan shifokor bo'lishimni aniq bilardim. Barchangizni berib, odamlarga yordam bering. Men uchun eng oliy mukofot - bemorning sog'lom go'zal tabassumdan quvonchini ko'rishdir.",
-    img: '/../src/assets/Murodjon.jpg',
+    img: 'path/Murodjon.jpg',
     href: 'doctor-murodjon'
   },
   {
     name: 'Vacancy',
     position: 'Ish faoliati',
-    img: '/../src/assets/doc-vac.jpg',
+    img: 'path/doc-vac.jpg',
     href: '#'
   }
 ]
@@ -116,7 +90,7 @@ export const feedbackUsers = [
     id: 1,
     name: 'Lola Baxtiyorovna',
     position: 'Dermotolog',
-    img: '/assets/lola.jpg'
+    img: '@/assets/lola.jpg'
   },
   {
     id: 2,

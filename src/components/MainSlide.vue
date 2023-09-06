@@ -1,5 +1,4 @@
 <script setup>
-import { slides } from '@/data'
 import MainSlideText from './MainSlideText.vue'
 import MainSlideImage from './MainSlideImage.vue'
 import { Splide, SplideSlide } from '@splidejs/vue-splide'
@@ -15,6 +14,32 @@ const mainOptions = {
   pagination: false,
   rewind: true
 }
+const slides = [
+  {
+    id: 0,
+    label: 'Teri kasalliklarini davolash, oldini olish va reabilitatsiyasi markazi.',
+    title:
+      'Eksimer lazer, Vud lampa, kriodestruktor, elektrokoagulyator kabi zamonvaiy tibbiy uskunalar bilan jixozlangan',
+    img: 'src/assets/slide-1.svg',
+    top: 5
+  },
+  {
+    id: 1,
+    label: 'Sochdagi kasalliklarni davolash, oldini olish va reabilitatsiyasi markazi.',
+    title:
+      'Eksimer lazer, Vud lampa, kriodestruktor, elektrokoagulyator kabi zamonvaiy tibbiy uskunalar bilan jixozlangan',
+    img: 'src/assets/slide-2.svg',
+    top: 4
+  },
+  {
+    id: 2,
+    label: 'Teri kasalliklarini davolash, oldini olish va reabilitatsiyasi markazi.',
+    title:
+      'Eksimer lazer, Vud lampa, kriodestruktor, elektrokoagulyator kabi zamonvaiy tibbiy uskunalar bilan jixozlangan',
+    img: 'src/assets/slide-3.svg',
+    top: 10
+  }
+]
 </script>
 <template>
   <Splide

@@ -1,6 +1,7 @@
 <script setup>
 defineProps(['images', 'label', 'top'])
 </script>
+
 <template>
   <img
     :src="images"

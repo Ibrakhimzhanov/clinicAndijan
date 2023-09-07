@@ -1,5 +1,6 @@
 <script setup>
 import LogoMain from './LogoMain.vue'
+import { socialMedia } from '@/data'
 </script>
 <template>
   <div
@@ -9,7 +10,7 @@ import LogoMain from './LogoMain.vue'
       <a href="index.html">
         <LogoMain />
       </a>
-      <div class="flex flex-col gap-5">
+      <!-- <div class="flex flex-col gap-5">
         <span class="max-w-[298px]">Download the app by clicking the link below :</span>
         <div class="flex xl:gap-10 gap-3">
           <a href="#">
@@ -19,22 +20,19 @@ import LogoMain from './LogoMain.vue'
             <img src="@/assets/apple.jpg" alt="App Store" />
           </a>
         </div>
-      </div>
+      </div> -->
     </div>
     <div class="flex flex-col items-end xl:text-left text-right xl:gap-5">
       <h6 class="text-lg">Social media</h6>
       <div class="flex items-center xl:gap-5">
-        <a href="#">
-          <img src="@/assets/facebook.svg" alt="Facebook" />
-        </a>
-        <a href="#">
-          <img src="@/assets/twitter.svg" alt="Twitter" />
-        </a>
-        <a href="#">
-          <img src="@/assets/linkedin.svg" alt="LinkedIn" />
-        </a>
-        <a href="#">
-          <img src="@/assets/instagram.svg" alt="Instagram" />
+        <a
+          :href="url"
+          class="flex items-center gap-3.5 hover:text-main"
+          v-for="{ name, img, url } in socialMedia"
+          :key="name"
+        >
+          <img :src="img" :alt="img" />
+          <p class="text-2xl font-sfMedium before:content-['•'] before:mr-3">{{ name }}</p>
         </a>
       </div>
       <span class="mt-10 text-lg flex flex-col lg:flex-row"

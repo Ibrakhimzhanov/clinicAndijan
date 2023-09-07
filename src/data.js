@@ -3,6 +3,7 @@ import { reactive } from 'vue'
 import slide1 from './assets/slide-1.svg'
 import slide2 from './assets/slide-2.svg'
 import slide3 from './assets/slide-3.svg'
+
 import ins from './assets/ins.svg'
 import tg from './assets/tel.svg'
 import fac from './assets/fac.svg'

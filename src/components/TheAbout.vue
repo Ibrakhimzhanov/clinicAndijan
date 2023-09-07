@@ -1,54 +1,13 @@
 <script setup>
 import SectionHeading from '@/components/SectionHeading.vue'
 import { ref } from 'vue'
-import { ABOUT, BUTTON_TYPE_DANGER, BUTTON_TYPE_NEUTRAL } from '../constants'
-import { PlayIcon } from '@heroicons/vue/24/solid'
-import BaseButton from './BaseButton.vue'
-let isActive = ref(true)
+import { ABOUT } from '../constants'
+import { PlayIcon, XCircleIcon } from '@heroicons/vue/24/solid'
+import MainModal from './MainModal.vue'
+let isOpen = ref(false)
 </script>
 
 <template>
-  <div
-    :class="`fixed flex cursor-pointer items-center z-[50] justify-center w-full bg-[#FFEEE4]  top-0 bottom-0 left-0 right-0 ${
-      isActive ? 'hidden' : 'flex'
-    }`"
-  >
-    <iframe
-      width="50%"
-      height="550"
-      src="https://www.youtube.com/embed/XqFJYO-i9aA?start=5"
-      title="YouTube video player"
-      frameborder="0"
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-      allowfullscreen
-    ></iframe>
-    <div
-      @click="isActive = !isActive"
-      :class="`fixed bottom-0 right-10 top-10 z-10 flex-col ${isActive ? 'hidden' : 'flex'}`"
-    >
-      <div
-        class="relative flex h-[50px] w-[50px] transform items-center justify-center overflow-hidden rounded-full bg-secondary shadow-md ring-0 ring-main transition-all duration-200 hover:ring-4 group-focus:ring-2"
-      >
-        <div
-          class="flex h-[20px] w-[20px] origin-center transform flex-col justify-between overflow-hidden transition-all duration-300"
-        >
-          <div
-            :class="`h-[2px] w-7  bg-white transition-all duration-300 ${
-              isActive ? '' : 'origin-left rotate-[42deg] transform'
-            }`"
-          ></div>
-          <div
-            :class="`${isActive ? '' : 'translate-x-10'} h-[2px] w-1/2
-                    transform rounded bg-white transition-all duration-300`"
-          ></div>
-          <div
-            :class="`${isActive ? '' : '-rotate-[42deg]'} h-[2px] w-7
-                    origin-left transform bg-white transition-all duration-300`"
-          ></div>
-        </div>
-      </div>
-    </div>
-  </div>
   <div :id="ABOUT" class="lg:pt-36 pt-20">
     <SectionHeading :title="ABOUT" />
     <div
@@ -74,7 +33,7 @@ let isActive = ref(true)
           class="absolute bottom-20 flex items-center gap-2 text-white rounded-[1.25rem] bg-main font-sfMedium text-lg"
         >
           <div
-            @click="isActive = !isActive"
+            @click="isOpen = true"
             class="flex items-center w-[200px] h-[50px] cursor-pointer font-sfMedium text-lg rounded-[20px] justify-between border border-main px-5"
           >
             Videoni ko’rish
@@ -88,6 +47,27 @@ let isActive = ref(true)
           </div>
         </div>
       </div>
+      <Teleport to="body">
+        <MainModal :is-open="isOpen" @close="isOpen = false">
+          <template #about>
+            <button
+              class="flex justify-end w-full mb-5 text-lg text-white font-sfSemi border-transparent gap-2 items-center"
+              @click="isOpen = false"
+            >
+              Close<XCircleIcon class="h-5 text-main" />
+            </button>
+            <iframe
+              width="1280"
+              height="720"
+              src="https://www.youtube.com/embed/Z-k_7xx1nLs?si=WQW-INnJecrmWJjx"
+              title="AnDerma clinikasi"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            ></iframe>
+          </template>
+        </MainModal>
+      </Teleport>
     </div>
   </div>
 </template>

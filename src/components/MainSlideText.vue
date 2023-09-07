@@ -3,6 +3,7 @@ import BaseButton from './BaseButton.vue'
 import { BUTTON_TYPE_NEUTRAL } from '../constants'
 import { ref } from 'vue'
 import { LockClosedIcon, PlayIcon, XCircleIcon } from '@heroicons/vue/24/solid'
+import MainModal from './MainModal.vue'
 defineProps({
   label: {
     type: String
@@ -18,7 +19,7 @@ const scrollTo = () => {
     behavior: 'smooth'
   })
 }
-let isOpen = ref(false)
+const isOpen = ref(false)
 </script>
 <template>
   <div class="relative">
@@ -51,34 +52,27 @@ let isOpen = ref(false)
         </BaseButton>
       </div>
     </div>
-    <teleport to="body">
-      <div
-        v-if="isOpen"
-        @click.self="isOpen = false"
-        :class="`${
-          isOpen ? 'isModal' : 'fixed'
-        } top-0 left-0 bottom-0 right-0 bg-[rgba(0,0,0,0.1)] w-full h-full flex items-center justify-center`"
-      >
-        <div
-          class="bg-white relative z-20 p-14 rounded-xl items-center justify-center w-full gap-5 flex flex-col"
-        >
-          <h2 class="font-sfBold uppercase tracking-wider">Notification</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, dolorem.</p>
+    <Teleport to="body">
+      <MainModal :is-open="isOpen" @close="isOpen = false">
+        <template #main>
+          <button
+            class="flex justify-end w-full mb-5 text-lg text-white font-sfSemi border-transparent gap-2 items-center"
+            @click="isOpen = false"
+          >
+            Close<XCircleIcon class="h-5 text-main" />
+          </button>
           <iframe
-            width="560"
-            height="315"
-            src="https://www.youtube.com/embed/Z-k_7xx1nLs?si=JE2ZiCPElERMu-rr"
-            title="YouTube video player"
+            width="1280"
+            height="720"
+            src="https://www.youtube.com/embed/Z-k_7xx1nLs?si=WQW-INnJecrmWJjx"
+            title="AnDerma clinikasi"
             frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             allowfullscreen
           ></iframe>
-          <button class="flex gap-1 items-center" @click="isOpen = false">
-            Close<XCircleIcon class="h-5 text-red-500" />
-          </button>
-        </div>
-      </div>
-    </teleport>
+        </template>
+      </MainModal>
+    </Teleport>
   </div>
 </template>
 <style scoped>

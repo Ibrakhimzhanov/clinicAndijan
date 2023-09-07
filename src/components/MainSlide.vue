@@ -32,4 +32,4 @@ const mainOptions = {
     </SplideSlide>
   </Splide>
 </template>
-<style scope></style>
+<style></style>

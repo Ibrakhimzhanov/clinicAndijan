@@ -8,7 +8,7 @@ import { socialMedia } from '@/data'
   >
     <div class="flex flex-col items-start gap-5 xl:gap-10">
       <a href="index.html">
-        <LogoMain />
+        <LogoMain isFooter />
       </a>
       <!-- <div class="flex flex-col gap-5">
         <span class="max-w-[298px]">Download the app by clicking the link below :</span>

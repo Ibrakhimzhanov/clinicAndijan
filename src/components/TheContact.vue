@@ -13,6 +13,30 @@ import { CONTACT } from '../constants'
       >
         <div class="flex flex-col gap-10">
           <h6 class="text-xl text-cGray">AnDerma Clinikasi</h6>
+          <div style="position: relative; overflow: hidden">
+            <a
+              href="https://yandex.uz/maps/org/anderma/197928513625/?utm_medium=mapframe&utm_source=maps"
+              style="color: #eee; font-size: 12px; position: absolute; top: 0px"
+              >AnDerma</a
+            ><a
+              href="https://yandex.uz/maps/10329/andijan/category/hospital/184105956/?utm_medium=mapframe&utm_source=maps"
+              style="color: #eee; font-size: 12px; position: absolute; top: 14px"
+              >Больница для взрослых в Андижане</a
+            ><iframe
+              src="https://yandex.uz/map-widget/v1/?ll=72.324494%2C40.810027&mode=search&oid=197928513625&ol=biz&z=19.22"
+              width="300"
+              height="200"
+              frameborder="1"
+              allowfullscreen="true"
+              style="position: relative"
+            ></iframe>
+          </div>
+
+          <a
+            class="text-xl font-sfMedium w-[220px] border-b border-main"
+            href="yandexmaps://maps.yandex.ru/?ll=72.324494%2C40.810027&z=19.22"
+            >Yandex Map orqali ko'rish</a
+          >
           <h5 class="max-w-[251px] w-full text-2xl font-sfMedium">
             Andijon shahar, Ahmad Donish ko'chasi 4-uy
           </h5>

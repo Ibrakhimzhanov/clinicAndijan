@@ -32,11 +32,6 @@ import { CONTACT } from '../constants'
             ></iframe>
           </div>
 
-          <a
-            class="text-xl font-sfMedium w-[220px] border-b border-main"
-            href="yandexmaps://maps.yandex.ru/?ll=72.324494%2C40.810027&z=19.22"
-            >Yandex Map orqali ko'rish</a
-          >
           <h5 class="max-w-[251px] w-full text-2xl font-sfMedium">
             Andijon shahar, Ahmad Donish ko'chasi 4-uy
           </h5>

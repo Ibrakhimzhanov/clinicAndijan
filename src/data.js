@@ -86,7 +86,7 @@ export const personals = [
   },
   {
     name: 'Vacancy',
-    position: 'Ish faoliati',
+    position: 'Ish faoliyati',
     img: vac,
     href: '#'
   }
@@ -102,12 +102,12 @@ export const services = [
   {
     title: 'PSORIAZ kasalligi',
     subtitle:
-      'Psoriazda Yevropa standartlarida davolash (3-5 yilgacha kasallikni nofoal davrda ushlab turish)',
+      'Psoriazda Yevropa standardlarida davolash (3-5 yilgacha kasallikni nofoal davrda ushlab turish)',
     img: ps
   },
   {
-    title: 'XUSNBUZAR kasalligi',
-    subtitle: 'Xusnbuzar kasalligini aniq sabablarga qaratilgan zamonaviy davolash usuli',
+    title: 'HUSNBUZAR kasalligi',
+    subtitle: 'Husnbuzar kasalligini aniq sabablarga qaratilgan zamonaviy davolash usuli',
     img: xs
   },
   {
@@ -119,7 +119,7 @@ export const services = [
   {
     title: 'TIRNOQDAGI o’zgarishlar',
     subtitle:
-      'PODOLOGIYA – tirnoq qalinlashishi, teri ichiga o’sishi tovon terisidagi muammolarga zamonaviy yechim',
+      'PODOLOGIYA – tirnoq qalinlashishi, teri ichiga o’sishi, tovon terisidagi muammolarga zamonaviy yechim',
     img: tir
   },
   {
@@ -198,7 +198,7 @@ export const faqQuestions = reactive([
     isExpanded: false
   },
   {
-    title: 'Xusnbuzar kasalligini to’liq davosi bormi? ',
+    title: 'Husnbuzar kasalligini to’liq davosi bormi? ',
     answer:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fus pharetra non loRm nec moncus. Etiam pomkordui n metus auctor vestibulum',
     isExpanded: false
@@ -210,7 +210,7 @@ export const faqQuestions = reactive([
     isExpanded: false
   },
   {
-    title: 'SPF ya’ni, terini quyoshdan ximoyalovchi vositalar rostdan ham foyda beradimi? ',
+    title: 'SPF ya’ni, terini quyoshdan himoyalovchi vositalar rostdan ham foyda beradimi? ',
     answer:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fus pharetra non loRm nec moncus. Etiam pomkordui n metus auctor vestibulum',
     isExpanded: false

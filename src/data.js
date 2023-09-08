@@ -129,6 +129,51 @@ export const services = [
   }
 ]
 
+export const cards = [
+  {
+    id: 0,
+    label: 'Batafsil',
+    title: 'Yangiliklar',
+    subtitle: 'Litvada plastik jarrohlik - sizni hayratda qoldiradi!',
+    text: "Yuzingiz va tanangiz qanday ko'rinishini tasavvur qilsangiz, siz ham mukammal plastik jarrohlik tajribasini xohlaysiz."
+  },
+  {
+    id: 1,
+    label: 'Batafsil',
+    title: 'Yangiliklar',
+    subtitle: 'Litvada plastik jarrohlik - sizni hayratda qoldiradi!',
+    text: "Yuzingiz va tanangiz qanday ko'rinishini tasavvur qilsangiz, siz ham mukammal plastik jarrohlik tajribasini xohlaysiz."
+  },
+  {
+    id: 2,
+    label: 'Batafsil',
+    title: 'Yangiliklar',
+    subtitle: 'Litvada plastik jarrohlik - sizni hayratda qoldiradi!',
+    text: "Yuzingiz va tanangiz qanday ko'rinishini tasavvur qilsangiz, siz ham mukammal plastik jarrohlik tajribasini xohlaysiz."
+  },
+  {
+    id: 3,
+    label: 'Batafsil',
+    title: 'Yangiliklar',
+    subtitle: 'Litvada plastik jarrohlik - sizni hayratda qoldiradi!',
+    text: "Yuzingiz va tanangiz qanday ko'rinishini tasavvur qilsangiz, siz ham mukammal plastik jarrohlik tajribasini xohlaysiz."
+  },
+  {
+    id: 4,
+    label: 'Batafsil',
+    title: 'Yangiliklar',
+    subtitle: 'Litvada plastik jarrohlik - sizni hayratda qoldiradi!',
+    text: "Yuzingiz va tanangiz qanday ko'rinishini tasavvur qilsangiz, siz ham mukammal plastik jarrohlik tajribasini xohlaysiz."
+  },
+  {
+    id: 5,
+    label: 'Batafsil',
+    title: 'Yangiliklar',
+    subtitle: 'Litvada plastik jarrohlik - sizni hayratda qoldiradi!',
+    text: "Yuzingiz va tanangiz qanday ko'rinishini tasavvur qilsangiz, siz ham mukammal plastik jarrohlik tajribasini xohlaysiz."
+  }
+]
+
 export const feedbackUsers = [
   {
     id: 0,

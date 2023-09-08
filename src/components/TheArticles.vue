@@ -3,50 +3,7 @@ import SectionHeading from '@/components/SectionHeading.vue'
 import 'vue3-carousel/dist/carousel.css'
 import { Carousel, Slide, Navigation } from 'vue3-carousel'
 import { ARTICLES } from '../constants'
-const cards = [
-  {
-    id: 0,
-    label: 'Batafsil',
-    title: 'Yangiliklar',
-    subtitle: 'Litvada plastik jarrohlik - sizni hayratda qoldiradi!',
-    text: "Yuzingiz va tanangiz qanday ko'rinishini tasavvur qilsangiz, siz ham mukammal plastik jarrohlik tajribasini xohlaysiz."
-  },
-  {
-    id: 1,
-    label: 'Batafsil',
-    title: 'Yangiliklar',
-    subtitle: 'Litvada plastik jarrohlik - sizni hayratda qoldiradi!',
-    text: "Yuzingiz va tanangiz qanday ko'rinishini tasavvur qilsangiz, siz ham mukammal plastik jarrohlik tajribasini xohlaysiz."
-  },
-  {
-    id: 2,
-    label: 'Batafsil',
-    title: 'Yangiliklar',
-    subtitle: 'Litvada plastik jarrohlik - sizni hayratda qoldiradi!',
-    text: "Yuzingiz va tanangiz qanday ko'rinishini tasavvur qilsangiz, siz ham mukammal plastik jarrohlik tajribasini xohlaysiz."
-  },
-  {
-    id: 3,
-    label: 'Batafsil',
-    title: 'Yangiliklar',
-    subtitle: 'Litvada plastik jarrohlik - sizni hayratda qoldiradi!',
-    text: "Yuzingiz va tanangiz qanday ko'rinishini tasavvur qilsangiz, siz ham mukammal plastik jarrohlik tajribasini xohlaysiz."
-  },
-  {
-    id: 4,
-    label: 'Batafsil',
-    title: 'Yangiliklar',
-    subtitle: 'Litvada plastik jarrohlik - sizni hayratda qoldiradi!',
-    text: "Yuzingiz va tanangiz qanday ko'rinishini tasavvur qilsangiz, siz ham mukammal plastik jarrohlik tajribasini xohlaysiz."
-  },
-  {
-    id: 5,
-    label: 'Batafsil',
-    title: 'Yangiliklar',
-    subtitle: 'Litvada plastik jarrohlik - sizni hayratda qoldiradi!',
-    text: "Yuzingiz va tanangiz qanday ko'rinishini tasavvur qilsangiz, siz ham mukammal plastik jarrohlik tajribasini xohlaysiz."
-  }
-]
+import { cards } from '../data'
 </script>
 <template>
   <div :id="ARTICLES" class="lg:pt-36 pt-20">
@@ -70,7 +27,9 @@ const cards = [
               {{ text }}
             </p>
             <div class="mt-6 flex gap-4">
-              <a href="#" class="text-cGray group-hover:text-cBlack">{{ label }}</a>
+              <router-link to="/arcticle-info" class="text-cGray group-hover:text-cBlack">{{
+                label
+              }}</router-link>
               <img
                 class="text-cGray group-hover:text-cBlack"
                 src="@/assets/arrow.svg"

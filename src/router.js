@@ -27,6 +27,10 @@ export const router = createRouter({
       component: () => import('@/pages/DocInfoMM.vue')
     },
     {
+      path: '/arcticle-info',
+      component: () => import('@/pages/ArticleInfo.vue')
+    },
+    {
       name: 'doc-appointment',
       path: '/doc-appointment',
       component: () => import('@/pages/DocInfoAA.vue')

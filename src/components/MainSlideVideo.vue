@@ -16,7 +16,7 @@ const closeModal = () => {
   <div v-if="showModal" class="modal">
     <div class="modal-content">
       <span class="close" @click="closeModal">&times;</span>
-      <iframe width="560" height="315" :src="youtubeUrl" frameborder="0" allowfullscreen></iframe>
+      <iframe width="60" height="15" :src="youtubeUrl" frameborder="0" allowfullscreen></iframe>
     </div>
   </div>
 </template>
@@ -32,15 +32,6 @@ const closeModal = () => {
   height: 100%;
   overflow: auto;
   background-color: rgba(0, 0, 0, 0.7);
-}
-
-.modal-content {
-  position: relative;
-  margin: auto;
-  width: 80%;
-  max-width: 800px;
-  background-color: #fefefe;
-  padding: 20px;
 }
 
 .close {

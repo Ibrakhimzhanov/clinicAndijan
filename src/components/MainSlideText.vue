@@ -75,42 +75,4 @@ const isOpen = ref(false)
     </Teleport>
   </div>
 </template>
-<style scoped>
-/* Стили модального окна */
-.isModal body {
-  height: 100%;
-  width: 100%;
-  position: relative;
-  overflow: hidden;
-}
-
-.modal {
-  display: none;
-  position: fixed;
-  z-index: 1;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  overflow: auto;
-  background-color: rgba(0, 0, 0, 0.7);
-}
-
-.modal-content {
-  position: relative;
-  margin: auto;
-  width: 80%;
-  max-width: 800px;
-  background-color: #fefefe;
-  padding: 20px;
-}
-
-.close {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  font-size: 24px;
-  font-weight: bold;
-  cursor: pointer;
-}
-</style>
+<style scoped></style>

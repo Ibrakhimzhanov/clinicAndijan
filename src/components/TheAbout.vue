@@ -15,9 +15,9 @@ let isOpen = ref(false)
     >
       <div class="flex flex-col items-start justify-between gap-4 font-sfBold">
         <h6 class="text-2xl text-cGray">AnDerma Klinikasi</h6>
-        <h5 class="max-w-[415px] text-xl font-sfSemi">
+        <h5 class="max-w-[390px] text-xl font-sfSemi">
           AnDerma Dermatology klinikasi Andijon viloyatida tashkil qilingan
-          <span class="text-main"> birinchi teri kasalliklari</span>
+          <span class="text-main"> birinchi xususiy teri kasalliklari</span>
           klinikasi hisoblanadi.
         </h5>
         <p class="max-w-[430px] font-sfRegular text-lg">

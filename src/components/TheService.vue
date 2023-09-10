@@ -22,9 +22,11 @@ import { services } from '@/data'
         <p class="font-sfMedium max-w-[263px]">
           {{ subtitle }}
         </p>
-        <a href="#" class="text-cGray group-hover:text-cBlack flex items-center gap-2"
+        <router-link
+          to="/Bizning xizmatlar"
+          class="text-cGray group-hover:text-cBlack flex items-center gap-2"
           >Batafsil <ArrowRightIcon class="h-4 w-4" />
-        </a>
+        </router-link>
       </div>
     </div>
   </div>

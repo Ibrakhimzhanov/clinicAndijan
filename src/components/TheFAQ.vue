@@ -33,9 +33,7 @@ import { handleAccordion } from '@/function'
         </div>
 
         <Collapse :when="questions[index].isExpanded" class="v-collapse">
-          <p>
-            {{ question.answer }}
-          </p>
+          <p v-html="question.answer"></p>
         </Collapse>
       </div>
     </div>

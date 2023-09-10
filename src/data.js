@@ -18,16 +18,16 @@ import soch from './assets/soch.png'
 import tir from './assets/tirnoqdagi.png'
 import tr from './assets/teri.png'
 
-import iq from './assets/iqbol.jpg'
-import ll from './assets/lola.jpg'
-import ab from './assets/abror.jpg'
+import iq from './assets/iqbol.png'
+import ll from './assets/lola.png'
+import ab from './assets/abror.png'
 
 export const slides = [
   {
     id: 0,
     label: 'Teri kasalliklarini davolash, oldini olish va reabilitatsiyasi markazi.',
     title:
-      'Eksimer lazer, Vud lampa, kriodestruktor, elektrokoagulyator kabi zamonvaiy tibbiy uskunalar bilan jixozlangan',
+      'Eksimer lazer, Vud lampa, kriodestruktor, elektrokoagulyator kabi zamonaviy tibbiy uskunalar bilan jihozlangan',
     img: slide1,
     top: 4
   },
@@ -35,7 +35,7 @@ export const slides = [
     id: 1,
     label: 'Sochdagi kasalliklarni davolash, oldini olish va reabilitatsiyasi markazi.',
     title:
-      'Eksimer lazer, Vud lampa, kriodestruktor, elektrokoagulyator kabi zamonvaiy tibbiy uskunalar bilan jixozlangan',
+      'Eksimer lazer, Vud lampa, kriodestruktor, elektrokoagulyator kabi zamonvaiy tibbiy uskunalar bilan jihozlangan',
     img: slide2,
     top: 4
   },
@@ -43,7 +43,7 @@ export const slides = [
     id: 2,
     label: 'Teri kasalliklarini davolash, oldini olish va reabilitatsiyasi markazi.',
     title:
-      'Eksimer lazer, Vud lampa, kriodestruktor, elektrokoagulyator kabi zamonvaiy tibbiy uskunalar bilan jixozlangan',
+      'Eksimer lazer, Vud lampa, kriodestruktor, elektrokoagulyator kabi zamonvaiy tibbiy uskunalar bilan jihozlangan',
     img: slide3,
     top: 10
   }
@@ -184,13 +184,13 @@ export const feedbackUsers = [
   {
     id: 1,
     name: 'Lola Baxtiyorovna',
-    position: 'Dermotolog',
+    position: "O'qituvchi, Oliy",
     img: ll
   },
   {
     id: 2,
     name: 'Abrorbek Ibrokhimov',
-    position: 'Shifokor Nevropotolog',
+    position: 'UX/UI Dizayner',
     img: ab
   }
 ]
@@ -225,39 +225,44 @@ export const faqQuestions = reactive([
     isExpanded: false // Initial value
   },
   {
-    title: 'Psoriaz kasalligi qanday davolanadi? ',
+    title: 'Psoriaz kasalligi qanday davolanadi?',
     answer:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fus pharetra non loRm nec moncus. Etiam pomkordui n metus auctor vestibulum',
+      'Psoriaz kasalligi terining surunkali va qaytalanib turuvchi kasalligi bo’lib, professional dermatolog mutaxassisi nazorati ostida davolanish talab qilinadi. Ushbu kasallik kompleks davolashni talab qiladi. Kasallikni turiga qarab davolash usuli farqlanadi. Bizning klinikamizda fandagi oxirgi yangiliklardan foydalanib davolanish imkoni mavjud.',
     isExpanded: false
   },
   {
-    title: 'Soch ekish og’riqlimi? ',
-    answer:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fus pharetra non loRm nec moncus. Etiam pomkordui n metus auctor vestibulum',
+    title: 'Soch to’kilishini qanday davolash mumkin?',
+    answer: `Soch to’kilishi bir necha sabablarga ko’ra bo’ladi:  <br/> &nbsp; a)	Androgen – nasliy va gormonlarga bog’liq <br/> &nbsp; b)	O’choqli – ko’proq stress bilan bog’liq <br/> &nbsp; c)	Zamburug’lar – teri va sochdagi zamburug’li kasalliklar sabab bo’ladi <br/> Aniq tashxisdan so’ng davolash usuli aniqlanadi.`,
     isExpanded: false
   },
   {
-    title: 'So’gal yoki qadoqlarni davolash imkoni bormi? ',
+    title: 'Soch ekish og’riqlimi?',
     answer:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fus pharetra non loRm nec moncus. Etiam pomkordui n metus auctor vestibulum',
+      'Soch ekish amaliyoti FUE og’riqsiz va bemor uchun hech qanday noqulaylik tug’dirmaydi.',
     isExpanded: false
   },
   {
-    title: 'Husnbuzar kasalligini to’liq davosi bormi? ',
+    title: 'So’gal yoki qadoqlarni davolash imkoni bormi?',
     answer:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fus pharetra non loRm nec moncus. Etiam pomkordui n metus auctor vestibulum',
+      'Albatta imkoni bor. Bizning kinikamizda 2 xil usul bilan davolaymiz: kriodestruksiya (suyuq azot yordamida) va elektrokoagulyatsiya (kuydirish yo’li bilan).',
+    isExpanded: false
+  },
+  {
+    title: 'Husnbuzar kasalligini to’liq davosi bormi?',
+    answer:
+      'Albatta to’liq davosi bor. Xusnbuzar kasalligi teridagi yog’ bezlarining yallig’lanishi bilan kechadigan kasallik. Bunda yog’ bezlarining faoliyatini normallashtirish juda muhim. Davolash usuli bemorning yoshiga va boshqa ko’rsatkichlarga asosan tanlanadi.',
     isExpanded: false
   },
   {
     title: ' Teridagi oq dog’larga gelmint (medda)ning aloqasi bormi?',
     answer:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fus pharetra non loRm nec moncus. Etiam pomkordui n metus auctor vestibulum',
+      'Teridagi o’zgarishlarda gelmint (medda, qurt)larning ahamiyati juda kam. Ya’ni gelmintlarni davolash bilan teridagi muammolarni hal qilib bo’lmaydi. Teridagi o’zgarishlarni faqat dermatology mutaxassisi nazorati bilan davolash maqsadga muvofiq.',
     isExpanded: false
   },
   {
-    title: 'SPF ya’ni, terini quyoshdan himoyalovchi vositalar rostdan ham foyda beradimi? ',
+    title: 'SPF ya’ni, terini quyoshdan himoyalovchi vositalar rostdan ham foyda beradimi?',
     answer:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fus pharetra non loRm nec moncus. Etiam pomkordui n metus auctor vestibulum',
+      'Bizning mintaqamizda quyosh nuri kuchli, o’z navbatida zarari ham sezilarli darajada. Shuni hisobga olib dermatologlar SPF vositalaridan foydalanish zarurligini ta’kidlaydi. SPF vositalari teridagi turli o’zgarishlarni oldini olishga xizmat qiladi.',
     isExpanded: false
   }
 ])

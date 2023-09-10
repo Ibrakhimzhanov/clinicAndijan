@@ -58,7 +58,7 @@ export const socialMedia = [
   {
     name: 'Telegram',
     img: tg,
-    url: 'https://t.me/anderma_chat'
+    url: 'https://t.me/andermauz'
   },
   {
     name: 'Facebook',
@@ -72,7 +72,7 @@ export const personals = [
     name: 'Axrorbek Abduraxmanov',
     position: 'Dermotolog',
     description:
-      "Bu bolalik orzusi edi, yoshligimdan shifokor bo'lishimni aniq bilardim. Barchangizni berib, odamlarga yordam bering. Men uchun eng oliy mukofot - bemorning sog'lom go'zal tabassumdan quvonchini ko'rishdir.",
+      '1990-yilda Andijon shahrida tug’ilgan. 2017-yildan Dermatolog mutaxassisi sifatida xizmat ko’rsatadi. Andijon davlat tibbiyot institutida katta o’qituvchi lavozimida ishlaydi. 6 yillik faoliyati davomida ko’plab teri kasalliklari bilan aziyat chekkan insonlarni davolagan. Asosan, vitiligo (oq dog’ kasalligi), psoriaz, husnbuzar, ekzema kabi teridagi murakkab kasalliklarni tashxislash va davolash amaliyoti bo’yicha Germaniya davlatining yetuk mutaxassislari bilan hamkorlik qilib keladi. Tirnoqdagi o’zgarishlarni davolashni yo’lga qo’yish maqsadida podologiya kursini tamomlab, podologiya bo’yicha murakkab amaliyotlarni yo’lga qo’ygan. Shuningdek, soch to’kilishi haqidagi fan, ya’ni trixologiya fanini ham mukammal egallab, soch to’kilishining konservativ davosi va soch ekish (FUE) amaliyotini ham mukammal amalga oshirmoqda.',
     img: ax,
     href: 'doctor-axrorbek'
   },
@@ -80,7 +80,7 @@ export const personals = [
     name: "Murodjon Mo'minov",
     position: 'Dermotolog',
     description:
-      "Bu bolalik orzusi edi, yoshligimdan shifokor bo'lishimni aniq bilardim. Barchangizni berib, odamlarga yordam bering. Men uchun eng oliy mukofot - bemorning sog'lom go'zal tabassumdan quvonchini ko'rishdir.",
+      '1990-yilda Buloqboshi tumanida tug’ilgan. 2017-yildan Dermatolog mutaxassisi sifatida xizmat ko’rsatadi. Andijon davlat tibbiyot institutida o’qituvchi lavozimida ishlaydi. 6 yillik faoliyati davomida ko’plab teri kasalliklari bilan aziyat chekkan insonlarni davolagan. Asosan, vitiligo (oq dog’ kasalligi), psoriaz, ekzema kabi teridagi murakkab kasalliklarni tashxislash va davolash, shuningdek kriodestruktor va elektrokoagulyator uskunalari yordamida so’gal, qadoq va papillomalarni davolash amaliyoti bo’yicha katta tajribaga ega.',
     img: mr,
     href: 'doctor-murodjon'
   },
@@ -167,6 +167,22 @@ export const cards = [
   },
   {
     id: 5,
+    label: 'Batafsil',
+    title: 'Yangiliklar',
+    subtitle: 'Litvada plastik jarrohlik - sizni hayratda qoldiradi!',
+    text: "Yuzingiz va tanangiz qanday ko'rinishini tasavvur qilsangiz, siz ham mukammal plastik jarrohlik tajribasini xohlaysiz."
+  }
+]
+export const cards = [
+  {
+    id: 0,
+    label: 'Batafsil',
+    title: 'Yangiliklar',
+    subtitle: 'Litvada plastik jarrohlik - sizni hayratda qoldiradi!',
+    text: "Yuzingiz va tanangiz qanday ko'rinishini tasavvur qilsangiz, siz ham mukammal plastik jarrohlik tajribasini xohlaysiz."
+  },
+  {
+    id: 1,
     label: 'Batafsil',
     title: 'Yangiliklar',
     subtitle: 'Litvada plastik jarrohlik - sizni hayratda qoldiradi!',

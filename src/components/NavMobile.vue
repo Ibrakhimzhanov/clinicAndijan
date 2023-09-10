@@ -57,9 +57,9 @@ let isActive = ref(true)
       </button>
     </div>
     <ul
-      class="relative flex h-full flex-col items-center justify-around bg-main py-8 font-sfMedium"
+      class="relative flex h-full flex-col items-center justify-around bg-main py-20 font-sfMedium"
     >
-      <NavListItem :to="`/${page}`" v-for="page in navItems" :key="page">
+      <NavListItem class="text-3xl" :to="`/${page}`" v-for="page in navItems" :key="page">
         {{ page }}
       </NavListItem>
     </ul>

@@ -4,7 +4,7 @@ import { cards } from '../data'
 import SectionHeading from '../components/SectionHeading.vue'
 </script>
 <template>
-  <div class="flex items-center flex-col gap-10 justify-center h-full w-full pt-48">
+  <div class="flex items-center flex-col gap-10 justify-center h-full w-full pt-48 px-10">
     <img src="../assets/article.jpg" alt="Article" />
     <h1 class="font-sfBold text-5xl text-cBlack max-w-[900px] w-full">
       Litvada plastik jarrohlik - sizni hayratda qoldiradi!
@@ -40,7 +40,7 @@ import SectionHeading from '../components/SectionHeading.vue'
     </div>
     <div :id="ARTICLES" class="pt-20">
       <SectionHeading title="Maqolalar" />
-      <div class="flex gap-5">
+      <div class="flex gap-5 flex-wrap justify-center">
         <div
           v-for="{ id, label, title, subtitle, text } in cards"
           :key="id"

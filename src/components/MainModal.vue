@@ -14,12 +14,9 @@ defineProps({
       class="modal-mask fixed z-[9999] top-0 left-0 w-full h-full bg-[rgba(0, 0, 0, 0.5)] flex transition-opacity ease-linear delay-300"
     >
       <div
-        class="modal-container w-full h-full m-auto py-5 px-7 bg-[#718192] rounded-sm shadow-[0 2px 8px rgba(0, 0, 0, 0.33)] transition delay-300 ease-linear flex items-center justify-center"
+        class="modal-container w-full h-full m-auto bg-[#718192] rounded-sm shadow-[0 2px 8px rgba(0, 0, 0, 0.33)] transition delay-300 ease-linear flex items-center justify-center"
       >
-        <div class="modal-about">
-          <slot name="about"></slot>
-        </div>
-        <div class="modal-main">
+        <div class="modal-main w-full flex items-center justify-center px-5">
           <slot name="main"> </slot>
         </div>
       </div>

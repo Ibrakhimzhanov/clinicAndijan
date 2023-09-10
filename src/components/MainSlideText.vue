@@ -2,7 +2,7 @@
 import BaseButton from './BaseButton.vue'
 import { BUTTON_TYPE_NEUTRAL } from '../constants'
 import { ref } from 'vue'
-import { LockClosedIcon, PlayIcon, XCircleIcon } from '@heroicons/vue/24/solid'
+import { PlayIcon, XCircleIcon } from '@heroicons/vue/24/solid'
 import MainModal from './MainModal.vue'
 defineProps({
   label: {
@@ -15,7 +15,7 @@ defineProps({
 const scrollTo = () => {
   window.scroll({
     left: 0,
-    top: 680,
+    top: 780,
     behavior: 'smooth'
   })
 }
@@ -53,23 +53,29 @@ const isOpen = ref(false)
       </div>
     </div>
     <Teleport to="body">
+      <div>
+        <h2>youtube embed</h2>
+      </div>
       <MainModal :is-open="isOpen" @close="isOpen = false">
         <template #main>
-          <button
-            class="flex justify-end w-full mb-5 text-lg text-white font-sfSemi border-transparent gap-2 items-center"
-            @click="isOpen = false"
-          >
-            Close<XCircleIcon class="h-5 text-main" />
-          </button>
-          <iframe
-            width="1280"
-            height="720"
-            src="https://www.youtube.com/embed/Z-k_7xx1nLs?si=WQW-INnJecrmWJjx"
-            title="AnDerma clinikasi"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowfullscreen
-          ></iframe>
+          <div class="xl:w-[75%] w-full m-auto">
+            <button
+              class="flex justify-end w-full mb-5 text-lg text-white font-sfSemi border-transparent gap-2 items-center"
+              @click="isOpen = false"
+            >
+              Close<XCircleIcon class="h-5 text-main" />
+            </button>
+            <vue-plyr>
+              <div class="plyr__video-embed">
+                <iframe
+                  src="https://www.youtube.com/embed/Z-k_7xx1nLs?si=WQW-INnJecrmWJjx"
+                  allowfullscreen
+                  allowtransparency
+                  allow="autoplay"
+                ></iframe>
+              </div>
+            </vue-plyr>
+          </div>
         </template>
       </MainModal>
     </Teleport>

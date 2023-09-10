@@ -53,9 +53,6 @@ const isOpen = ref(false)
       </div>
     </div>
     <Teleport to="body">
-      <div>
-        <h2>youtube embed</h2>
-      </div>
       <MainModal :is-open="isOpen" @close="isOpen = false">
         <template #main>
           <div class="xl:w-[75%] w-full m-auto">

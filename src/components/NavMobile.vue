@@ -9,7 +9,7 @@ let isActive = ref(true)
   <div class="flex w-full items-end justify-end xl:hidden">
     <button class="group relative" @click="isActive = !isActive">
       <div
-        class="relative flex h-[50px] w-[50px] transform items-center justify-center overflow-hidden rounded-full bg-slate-700 shadow-md ring-0 ring-main transition-all duration-200 hover:ring-8 group-focus:ring-4"
+        class="relative flex h-[50px] w-[50px] transform items-center justify-center overflow-hidden rounded-full bg-main shadow-md ring-0 ring-cGray transition-all duration-200 hover:ring-8 group-focus:ring-4"
       >
         <div
           class="flex h-[20px] w-[20px] origin-center transform flex-col justify-between overflow-hidden transition-all duration-300"

@@ -8,7 +8,7 @@ let isOpen = ref(false)
 </script>
 
 <template>
-  <div :id="ABOUT" class="lg:pt-36 pt-20">
+  <div :id="ABOUT" class="lg:pt-36 pt-28">
     <SectionHeading :title="ABOUT" />
     <div
       class="m-auto flex lg:flex-row flex-col xl:gap-0 xl:p-0 p-5 gap-10 max-w-[1060px] items-center justify-between"
@@ -34,7 +34,7 @@ let isOpen = ref(false)
         >
           <div
             @click="isOpen = true"
-            class="flex items-center w-[200px] h-[50px] cursor-pointer font-sfMedium text-lg rounded-[20px] justify-between border border-main px-5"
+            class="pulse flex items-center w-[200px] h-[50px] cursor-pointer font-sfMedium text-lg rounded-[20px] justify-between border border-main px-5"
           >
             Videoni ko’rish
             <div
@@ -49,22 +49,25 @@ let isOpen = ref(false)
       </div>
       <Teleport to="body">
         <MainModal :is-open="isOpen" @close="isOpen = false">
-          <template #about>
-            <button
-              class="flex justify-end w-full mb-5 text-lg text-white font-sfSemi border-transparent gap-2 items-center"
-              @click="isOpen = false"
-            >
-              Close<XCircleIcon class="h-5 text-main" />
-            </button>
-            <iframe
-              width="1280"
-              height="720"
-              src="https://www.youtube.com/embed/Z-k_7xx1nLs?si=WQW-INnJecrmWJjx"
-              title="AnDerma clinikasi"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowfullscreen
-            ></iframe>
+          <template #main>
+            <div class="xl:w-[75%] w-full m-auto">
+              <button
+                class="flex justify-end w-full mb-5 text-lg text-white font-sfSemi border-transparent gap-2 items-center"
+                @click="isOpen = false"
+              >
+                Close<XCircleIcon class="h-5 text-main" />
+              </button>
+              <vue-plyr>
+                <div class="plyr__video-embed">
+                  <iframe
+                    src="https://www.youtube.com/embed/Z-k_7xx1nLs?si=WQW-INnJecrmWJjx"
+                    allowfullscreen
+                    allowtransparency
+                    allow="autoplay"
+                  ></iframe>
+                </div>
+              </vue-plyr>
+            </div>
           </template>
         </MainModal>
       </Teleport>

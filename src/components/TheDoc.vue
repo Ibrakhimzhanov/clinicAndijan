@@ -4,7 +4,7 @@ import { DOCTOR } from '../constants'
 import { personals } from '@/data'
 </script>
 <template>
-  <div :id="DOCTOR" class="lg:pt-36 pt-20">
+  <div :id="DOCTOR" class="lg:pt-36 pt-28">
     <SectionHeading :title="DOCTOR" />
     <div class="px-5">
       <div

@@ -8,7 +8,7 @@ import { handleAccordion } from '@/function'
 </script>
 
 <template>
-  <div class="lg:pt-36 pt-20">
+  <div class="lg:pt-36 pt-28">
     <SectionHeading :title="FAQ" class="text-center" />
 
     <div class="flex m-auto px-5 max-w-[870px] w-full flex-col gap-1">

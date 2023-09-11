@@ -9,10 +9,8 @@ defineProps({
 <template>
   <router-link
     to="/Asosiy"
-    :class="`${
-      isFooter ? 'lg:w-[300px] lg:h-[90px] w-[150px]' : 'w-[170px] h-[50px]'
-    } flex items-center`"
+    :class="`${isFooter ? 'lg:w-[300px] lg:h-[90px] w-[150px]' : 'w-[150px]'} flex items-center`"
   >
-    <img src="../assets/logo.svg" alt="Logotype" class="w-full" />
+    <img src="../assets/logo.png" alt="Logotype" class="w-full" />
   </router-link>
 </template>

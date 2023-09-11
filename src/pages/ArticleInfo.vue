@@ -41,7 +41,7 @@ import SectionHeading from '../components/SectionHeading.vue'
       </p>
     </div>
   </div>
-  <div :id="ARTICLES" class="lg:pt-36 pt-20">
+  <div :id="ARTICLES" class="lg:pt-36 pt-28">
     <SectionHeading title="Maqolalar" />
     <Carousel
       :autoplay="2000"

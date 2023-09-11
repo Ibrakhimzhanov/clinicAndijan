@@ -71,7 +71,7 @@ const mainOptions = {
     <Splide ref="main" :options="mainOptions">
       <SplideSlide v-for="{ title, rate, description, id } in feedbackDescriptions" :key="id">
         <h6 class="font-sfBold text-xl">{{ title }}</h6>
-        <div class="flex gap-5 mt-2.5 mb-5">
+        <div class="flex gap-5 mt-2.5 mb-5 text-xl text-[#F5A623]">
           {{ rate }}
         </div>
         <p class="max-w-[537px]" v-html="description"></p>

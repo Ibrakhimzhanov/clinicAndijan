@@ -3,7 +3,7 @@ import SectionHeading from '@/components/SectionHeading.vue'
 import { CONTACT } from '../constants'
 </script>
 <template>
-  <div :id="CONTACT" class="lg:pt-36 pt-20">
+  <div :id="CONTACT" class="lg:pt-36 pt-28">
     <SectionHeading :title="CONTACT" />
     <div
       class="m-auto flex lg:flex-row gap-10 flex-col p-5 max-w-[1090px] items-center justify-between"

@@ -10,8 +10,8 @@ const name = ref('')
 const phone = ref('')
 const subject = ref('')
 
-const token = '5692599850:AAHsyL_DKpRVQhWX6renkcwcwhjDL06mPGI'
-const chatId = '657967394'
+const token = ''
+const chatId = ''
 const urlApi = `https://api.telegram.org/bot${token}/sendMessage`
 
 let isLoading = ref(false)
